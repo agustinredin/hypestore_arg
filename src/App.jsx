@@ -1,17 +1,15 @@
+import {useState} from 'react'
 import {NavBar, ItemListContainer} from './components'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, Button } from '@chakra-ui/react'
 
 function App() {
-  // Ejemplo para renderizado dinámico
-  // Se puede crear una app dinámica haciendo fetch del menú
-  // En este caso, la tabla 'menuItem' en db tiene que definir
-  // Sus propiedades. Acá usamos un ejemplo.
+  const [cart, setCart] = useState([])
 
   return (
     <ChakraProvider>
-    {/* Toda la app */}
-    <NavBar/>
-    <ItemListContainer/>
+    <NavBar cart={cart}/>
+    <ItemListContainer greeting="Hola mundo!"/>
+    <Button onClick={()=> setCart([...cart, {}])}>Agregar al carrito</Button>
     </ChakraProvider>
   )
 }

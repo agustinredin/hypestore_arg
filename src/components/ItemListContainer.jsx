@@ -1,11 +1,10 @@
-import React from 'react'
-import {Text, Container} from '@chakra-ui/react'
+import {Text, Container, Flex, Button} from '@chakra-ui/react'
 
 const ItemListContainer = ({greeting}) => {
   return (
-    <Container>
+    <Flex px={0} py={0} width="100%">
         <Text>{greeting}</Text>
-    </Container>
+    </Flex>
   )
 }
 
