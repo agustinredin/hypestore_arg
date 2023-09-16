@@ -1,33 +1,35 @@
-import { BsCartFill, BsCart } from "react-icons/bs";
-import {IconButton, Button, Flex, Text} from '@chakra-ui/react'
-const CartWidget = ({cart}) => {
-  console.log(cart)
-  let cartItems = cart ? cart.length : 0;
-  return (
-    <Flex justifyContent='center' rounded='none' p={2} fontSize={20} alignItems='center' variant='outline' bg='blackAlpha.900' color='whiteAlpha.900'>
-      {cartItems > 0 ? <BsCartFill/> : <BsCart/>}
-      <Text>{cartItems}</Text>
-    </Flex>
-    // <Button >
-      
-    //   <
-    //   </Button>
-    // <Button rounded="none"
-    // aria-label="Abrir carrito" size="md" alignItems="center" justifyContent="center">
-    //   <IconButton
-          
-    //       icon={cartItems > 0 ? <BsCartFill/> : <BsCart />}
-    //       onClick={() => openCart(cartItems)}
-    //       // _hover={{ color: 'white.700', bg: useColorModeValue('black.100', 'black.900'), }} 
-    //       />
-    //       <Text>{cartItems}</Text>
-    // </Button>
-  )
-}
+import { BsCartFill } from "react-icons/bs";
+import { Flex, Text, Button } from '@chakra-ui/react'
+import { useState, useEffect } from 'react';
 
-const openCart = (cartItems) => {
-  console.log(cartItems)
-  //llamada a modal de carrito
+const CartWidget = ({ cart }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const cartItems = cart && cart.length > 0 ? Math.min(cart.length, 10) : 0;
+
+  const onClose = () => setIsOpen(false);
+  const onOpen = () => setIsOpen(true);
+
+  return (
+    <Flex justifyContent='center' alignItems='normal' rounded='none' p={2} cursor='pointer' onClick={onOpen} fontSize={20} variant='outline'>
+      <Button
+        px={6}
+        fontSize={'x-large'}
+        rounded='none'
+        bg={'transparent'}
+        color={'blackAlpha.900'}
+        transitionDuration='0.1s'
+        _hover={{
+          bg: 'blackAlpha.900',
+          color: 'whiteAlpha.900'
+        }}
+        _focus={{
+          bg: 'blackAlpha.900',
+          color: 'whiteAlpha.900'
+        }}>
+        <Flex alignItems='center' justifyContent='center'><BsCartFill /> <Text paddingLeft='1'>{cartItems}</Text></Flex>
+      </Button>
+    </Flex>
+  )
 }
 
 export default CartWidget

@@ -11,6 +11,7 @@ node_modules
 public
 dist
 dist-ssr
+src/components/Promises.jsx
 *.local
 
 # Editor directories and files
