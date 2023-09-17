@@ -1,0 +1,63 @@
+[
+    {
+      "price": "199.99",
+      "imagePath": "/src/assets/prod1.gif",
+      "detailPath": "/src/assets/prod1_det.jpeg",
+      "key": 0,
+      "title": "Distinta",
+      "subtitle": "Chaleco para Mujeres",
+      "desc": "El chaleco \"Distinta\" es una pieza de moda única diseñada exclusivamente para mujeres. Su estilo distintivo y versatilidad lo convierten en un elemento imprescindible en cualquier guardarropa. Hecho a mano con atención al detalle, este chaleco ofrece una declaración de estilo genuinamente diferente.",
+      "categoria": "sale"
+    },
+    {
+      "price": "249.99",
+      "imagePath": "/src/assets/prod2.gif",
+      "detailPath": "/src/assets/prod2_det.jpeg",
+      "key": 1,
+      "title": "Kalashnikov",
+      "subtitle": "Campera Puffer azul con Bordado Personalizado",
+      "desc": "La campera puffer \"Kalashnikov\" en azul es una obra maestra de diseño individual. Cada una es bordada a mano con un diseño personalizado, lo que significa que ninguna es igual a otra. Esta campera es una declaración audaz de tu estilo y una verdadera obra de arte.",
+      "categoria": "sale"
+    },
+    {
+      "price": "149.99",
+      "imagePath": "/src/assets/prod3.gif",
+      "detailPath": "/src/assets/prod3_det.jpeg",
+      "key": 2,
+      "title": "Cargos",
+      "subtitle": "Pantalones con diseño único multicorte y ajustable",
+      "desc": "Los pantalones \"Cargos\" son mucho más que una prenda común. Cada par presenta un diseño único y limitado que te distingue de la multitud. Estos pantalones son la elección perfecta para aquellos que buscan un estilo excepcional y auténtico.",
+      "categoria": "nuevo"
+    },
+    {
+      "price": "299.99",
+      "imagePath": "/src/assets/prod4.gif",
+      "detailPath": "/src/assets/prod4_det.jpeg",
+      "key": 3,
+      "title": "Envuelto",
+      "subtitle": "Campera estilo Crip Bandana color rojo",
+      "desc": "La campera \"Envuelto\" te transporta a la era del estilo gangster con su diseño de bandana simulada. Esta prenda única te hará destacar en cualquier lugar. Cada pieza es confeccionada con cuidado, lo que garantiza que tu estilo sea inigualable.",
+      "categoria": "sale"
+    },
+    {
+      "price": "309.99",
+      "imagePath": "/src/assets/prod5.gif",
+      "detailPath": "/src/assets/prod5_det.jpeg",
+      "key": 4,
+      "title": "Bodykit",
+      "subtitle": "Conjunto Techwear con facemask",
+      "desc": "El conjunto \"Bodykit\" combina un chaleco y pantalones cargo en un estilo gótico novedoso. Está diseñado con atención al detalle y es perfecto para aquellos que buscan un estilo oscuro y distintivo. Este conjunto es una expresión de individualidad en el mundo de la moda.",
+      "categoria": "nuevo"
+    },
+    {
+      "price": "239.99",
+      "imagePath": "/src/assets/prod6.gif",
+      "detailPath": "/src/assets/prod6_det.jpeg",
+      "key": 5,
+      "title": "Vert",
+      "subtitle": "Campera Puffer verde con Bordado Personalizado",
+      "desc": "La campera puffer \"Vert\" en verde es una obra de arte en sí misma. Cada una de estas camperas cuenta con un bordado personalizado, lo que la hace única. Este es el toque de estilo que necesitas para destacar en la escena urbana.",
+      "categoria": "nuevo"
+    }
+  ]
+  
