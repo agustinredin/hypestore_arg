@@ -1,45 +1,52 @@
-import { Progress, SimpleGrid} from '@chakra-ui/react'
-import {useParams} from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { Progress, SimpleGrid, Skeleton, Text, Flex } from '@chakra-ui/react'
+import { useParams } from 'react-router-dom'
+import { useState, useEffect, useRef, useContext } from 'react'
+import { productContext } from '../context/ProductContext'
+import { getDocs, getFirestore, query, collection, where } from 'firebase/firestore'
 import Item from './Item'
 
 const ItemListContainer = () => {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [productos, setProductos] = useState([])
+  const { products, setProducts } = useContext(productContext)
   const { id } = useParams()
+  const ref = useRef(null)
 
   useEffect(() => {
-    let resolveTimeout;
-    const abort = new AbortController()
+    const controller = new AbortController()
 
-    /* timeout bajado de 3s de consgina a 1.5s así no se pierde tiempo :) */
-    let promesa = new Promise((resolve, reject) => {
-      let response = fetch('/src/assets/products.json').then(res => res.json())
-      console.log(response)
-      resolveTimeout = setTimeout(() => {
-        setIsLoaded(true)
-        console.log(response)
-        resolve(response)
-      }, 1500)
-    })
-
-    promesa.then(res => setProductos(id ? res.filter(i => i.categoria == id) : res))
+      let promesa = new Promise((resolve, reject) => {
+        const db = getFirestore()
+        const itemQuery = id ? query(collection(db, "products"), where("categoryId", "==", id)) : query(collection(db, "products"))
+  
+        getDocs(itemQuery).then((snapshot) => {
+          setIsLoaded(true)
+          resolve(snapshot.docs.map((doc) => ({ ...doc.data() })))
+        })
+      })
+  
+      promesa.then(res => setProducts(res.filter(x => x.stock > 0)))
 
     return () => {
       setIsLoaded(false)
-      clearTimeout(resolveTimeout)
-      abort.abort()
+      controller.abort()
     }
   }, [id])
 
   return (
-    <SimpleGrid minChildWidth='md' w='100%' minH='500px'>
+    <>
       {isLoaded ? (
-        productos.map((producto, idx) => <Item item={producto} key={idx} />)
+        <SimpleGrid minChildWidth='md' w='100%' minH='80vh'>
+          {products.map((producto, idx) => <Item item={producto} key={idx} />)}
+        </SimpleGrid>
       ) : (
-        <Progress size='xs' isIndeterminate />
+        <>
+          <Progress size='xs' isIndeterminate w={'100%'} />
+          <Flex justifyContent={'center'} alignItems={'center'} h={'80vh'} w={'100%'}>
+            <Text ref={ref}>Cargando...</Text>
+          </Flex>
+        </>
       )}
-    </SimpleGrid>
+    </>
   )
 }
 

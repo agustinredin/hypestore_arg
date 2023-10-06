@@ -3,5 +3,8 @@ import CartWidget from './CartWidget'
 import NavBar from './navbar'
 import ItemDetailContainer from './ItemDetailContainer'
 import Item from './Item.jsx'
+import Checkout from './Checkout.jsx'
+import Footer from './Footer.jsx'
+import Typewriter from './Typewriter'
 
-export {ItemListContainer, CartWidget, NavBar, ItemDetailContainer}
+export {Typewriter, Footer, ItemListContainer, CartWidget, NavBar, ItemDetailContainer, Checkout}
