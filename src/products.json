@@ -2,7 +2,7 @@
     {
       "price": "199.99",
       "imagePath": "prod1.gif",
-      "detailPath": "prod1_det.jpeg",
+      "detailPath": "../prod1_det.jpeg",
       "key": 0,
       "title": "Distinta",
       "subtitle": "Chaleco para Mujeres",
@@ -14,7 +14,7 @@
     {
       "price": "249.99",
       "imagePath": "prod2.gif",
-      "detailPath": "prod2_det.jpeg",
+      "detailPath": "../prod2_det.jpeg",
       "key": 1,
       "title": "Trueno",
       "subtitle": "Campera Puffer azul con Bordado Personalizado",
@@ -26,7 +26,7 @@
     {
       "price": "149.99",
       "imagePath": "prod3.gif",
-      "detailPath": "prod3_det.jpeg",
+      "detailPath": "../prod3_det.jpeg",
       "key": 2,
       "title": "Cargos",
       "subtitle": "Pantalones con diseño único multicorte y ajustable",
@@ -38,7 +38,7 @@
     {
       "price": "299.99",
       "imagePath": "prod4.gif",
-      "detailPath": "prod4_det.jpeg",
+      "detailPath": "../prod4_det.jpeg",
       "key": 3,
       "title": "Envuelto",
       "subtitle": "Campera estilo Crip Bandana color rojo",
@@ -50,7 +50,7 @@
     {
       "price": "309.99",
       "imagePath": "prod5.gif",
-      "detailPath": "prod5_det.jpeg",
+      "detailPath": "../prod5_det.jpeg",
       "key": 4,
       "title": "Bodykit",
       "subtitle": "Conjunto Techwear con facemask",
@@ -62,7 +62,7 @@
     {
       "price": "239.99",
       "imagePath": "prod6.gif",
-      "detailPath": "prod6_det.jpeg",
+      "detailPath": "../prod6_det.jpeg",
       "key": 5,
       "title": "Vert",
       "subtitle": "Campera Puffer verde con Bordado Personalizado",
@@ -74,7 +74,7 @@
     {
       "price": "129.99",
       "imagePath": "prod7.gif",
-      "detailPath": "prod7_det.jpeg",
+      "detailPath": "../prod7_det.jpeg",
       "key": 6,
       "title": "Sahara",
       "subtitle": "Khakis multicorte con tela reforzada",
@@ -86,7 +86,7 @@
     {
       "price": "179.99",
       "imagePath": "prod8.gif",
-      "detailPath": "prod8_det.jpeg",
+      "detailPath": "../prod8_det.jpeg",
       "key": 7,
       "title": "Candy",
       "subtitle": "Puffer crop con acabado brilloso",
