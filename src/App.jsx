@@ -31,7 +31,7 @@ const theme = extendTheme({
 
 const messages = [
   'Todos nuestros precios están expresados en USD.', 
-  'Aprovechá el sale hasta el 15 de octubre.',
+  'Aprovechá el sale hasta el 15 de noviembre.',
   'Envío gratis a todo el país.'
 ];
 

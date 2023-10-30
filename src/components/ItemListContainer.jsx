@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useContext } from 'react'
 import { productContext } from '../context/ProductContext'
 import { getDocs, getFirestore, query, collection, where } from 'firebase/firestore'
 import Item from './Item'
+import productsBackup from '../products.json'
 
 const ItemListContainer = () => {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -21,6 +22,9 @@ const ItemListContainer = () => {
         getDocs(itemQuery).then((snapshot) => {
           setIsLoaded(true)
           resolve(snapshot.docs.map((doc) => ({ ...doc.data() })))
+        }).catch(err => {
+          setIsLoaded(true)
+          resolve(productsBackup)
         })
       })
   

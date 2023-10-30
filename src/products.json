@@ -1,83 +1,99 @@
 [
     {
       "price": "199.99",
-      "imagePath": "/src/assets/prod1.gif",
-      "detailPath": "/src/assets/prod1_det.jpeg",
+      "imagePath": "prod1.gif",
+      "detailPath": "prod1_det.jpeg",
       "key": 0,
       "title": "Distinta",
       "subtitle": "Chaleco para Mujeres",
       "desc": "El chaleco \"Distinta\" es una pieza de moda única diseñada exclusivamente para mujeres. Imprescindible en cualquier guardarropa. Hecho a mano con atención al detalle.",
-      "categoria": "sale"
+      "categoria": "sale",
+      "stock": 9,
+      "categoryId": "hSpPzmLSRAXS4KknnPau"
     },
     {
       "price": "249.99",
-      "imagePath": "/src/assets/prod2.gif",
-      "detailPath": "/src/assets/prod2_det.jpeg",
+      "imagePath": "prod2.gif",
+      "detailPath": "prod2_det.jpeg",
       "key": 1,
       "title": "Trueno",
       "subtitle": "Campera Puffer azul con Bordado Personalizado",
       "desc": "Cada artículo es bordado a mano con un diseño personalizado, lo que significa que ninguno es igual a otro. Esta campera es una declaración audaz de tu estilo y una verdadera obra de arte.",
-      "categoria": "sale"
+      "categoria": "sale",
+      "stock": 9,
+      "categoryId": "KUFjSgLNfA3ASV4tHOuk"
     },
     {
       "price": "149.99",
-      "imagePath": "/src/assets/prod3.gif",
-      "detailPath": "/src/assets/prod3_det.jpeg",
+      "imagePath": "prod3.gif",
+      "detailPath": "prod3_det.jpeg",
       "key": 2,
       "title": "Cargos",
       "subtitle": "Pantalones con diseño único multicorte y ajustable",
       "desc": "Los pantalones \"Cargos\" son mucho más que una prenda común. Cada par presenta un diseño único. Estos pantalones son la elección perfecta para aquellos que buscan un estilo excepcional y auténtico.",
-      "categoria": "nuevo"
+      "categoria": "nuevo",
+      "stock": 9,
+      "categoryId": "hSpPzmLSRAXS4KknnPau"
     },
     {
       "price": "299.99",
-      "imagePath": "/src/assets/prod4.gif",
-      "detailPath": "/src/assets/prod4_det.jpeg",
+      "imagePath": "prod4.gif",
+      "detailPath": "prod4_det.jpeg",
       "key": 3,
       "title": "Envuelto",
       "subtitle": "Campera estilo Crip Bandana color rojo",
       "desc": "La campera \"Envuelto\" te transporta a la era del estilo gangster con su diseño de bandana simulada. Esta prenda única te hará destacar en cualquier lugar. Cada pieza es confeccionada con cuidado.",
-      "categoria": "sale"
+      "categoria": "sale",
+      "stock": 9,
+      "categoryId": "KUFjSgLNfA3ASV4tHOuk"
     },
     {
       "price": "309.99",
-      "imagePath": "/src/assets/prod5.gif",
-      "detailPath": "/src/assets/prod5_det.jpeg",
+      "imagePath": "prod5.gif",
+      "detailPath": "prod5_det.jpeg",
       "key": 4,
       "title": "Bodykit",
       "subtitle": "Conjunto Techwear con facemask",
       "desc": "El conjunto \"Bodykit\" combina un chaleco y pantalones cargo en un estilo gótico novedoso. Está diseñado con atención al detalle y es perfecto para aquellos que buscan un estilo distintivo",
-      "categoria": "nuevo"
+      "categoria": "nuevo",
+      "stock": 9,
+      "categoryId": "hSpPzmLSRAXS4KknnPau"
     },
     {
       "price": "239.99",
-      "imagePath": "/src/assets/prod6.gif",
-      "detailPath": "/src/assets/prod6_det.jpeg",
+      "imagePath": "prod6.gif",
+      "detailPath": "prod6_det.jpeg",
       "key": 5,
       "title": "Vert",
       "subtitle": "Campera Puffer verde con Bordado Personalizado",
       "desc": "Campera puffer \"Vert\" en verde. Tailor-made con bordado personalizado. Este es el toque de estilo que necesitas para destacar en la escena urbana.",
-      "categoria": "nuevo"
+      "categoria": "nuevo",
+      "stock": 9,
+      "categoryId": "KUFjSgLNfA3ASV4tHOuk"
     },
     {
       "price": "129.99",
-      "imagePath": "/src/assets/prod7.gif",
-      "detailPath": "/src/assets/prod7_det.jpeg",
+      "imagePath": "prod7.gif",
+      "detailPath": "prod7_det.jpeg",
       "key": 6,
       "title": "Sahara",
       "subtitle": "Khakis multicorte con tela reforzada",
       "desc": "Cada prenda posee detalles singulares. Son la opción ideal para quienes desean destacar de manera cómoda y relajada.",
-      "categoria": "sale"
+      "categoria": "sale",
+      "stock": 9,
+      "categoryId": "hSpPzmLSRAXS4KknnPau"
     },
     {
       "price": "179.99",
-      "imagePath": "/src/assets/prod8.gif",
-      "detailPath": "/src/assets/prod8_det.jpeg",
+      "imagePath": "prod8.gif",
+      "detailPath": "prod8_det.jpeg",
       "key": 7,
       "title": "Candy",
       "subtitle": "Puffer crop con acabado brilloso",
       "desc": "Colores brillantes para destacar. Estilo urbano llamativo y combinable.",
-      "categoria": "nuevo"
+      "categoria": "nuevo",
+      "stock": 9,
+      "categoryId": "KUFjSgLNfA3ASV4tHOuk"
     }
   ]
   

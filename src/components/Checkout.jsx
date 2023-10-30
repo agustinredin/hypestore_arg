@@ -6,6 +6,19 @@ import CheckoutConfirmation from './CheckoutConfirmation';
 import UserForm from './UserForm';
 import Brief from './Brief';
 
+let _categorias = [
+    {
+        'name': "New in",
+        'path': "nuevo",
+        'id': 'KUFjSgLNfA3ASV4tHOuk'
+    },
+    {
+        'name': "Sale",
+        'path': "sale",
+        'id': 'hSpPzmLSRAXS4KknnPau'
+    }
+]
+
 //esqueleto de archivo:
 //Checkout es el componente contenedor con render condicional
 //Brief tiene la lista de productos
@@ -29,6 +42,9 @@ const Checkout = () => {
                 return { ...item.data(), "id": item.id }
             })
             setCategorias(res)
+            setIsLoaded(true)
+        }).catch(err => {
+            setCategorias(_categorias)
             setIsLoaded(true)
         })
     }, [parsedCart])

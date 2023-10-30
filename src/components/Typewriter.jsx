@@ -3,7 +3,7 @@ import { Box, Flex } from '@chakra-ui/react';
 import Typical from 'react-typical';
 
 const Typewriter = ({messages}) => {
-    const delay = 3000;
+    const delay = 10000;
     const steps = messages.flatMap(message => [message, delay]);
 
     return (

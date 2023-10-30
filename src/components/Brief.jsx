@@ -2,6 +2,18 @@ import { VStack, HStack, Flex, Image, Stack, Text, Tooltip, chakra } from '@chak
 import { DeleteIcon } from '@chakra-ui/icons';
 
 const Brief = ({ parsedCart, categorias, handleDelete }) => {
+
+    const buttonStyles = {
+        rounded: 'none',
+        bg: 'transparent',
+        border: '1px solid black',
+        color: 'blackAlpha.900',
+        _hover: {
+            bg: 'blackAlpha.900',
+            color: 'whiteAlpha.900'
+        }
+    };
+
     return (
 
         <VStack spacing={8}>
@@ -11,6 +23,8 @@ const Brief = ({ parsedCart, categorias, handleDelete }) => {
 
                     return (
                         <HStack
+                            {...buttonStyles}
+                            transitionDuration={'0.25s'}
                             key={index}
                             direction={{ base: 'column', md: 'row' }}
                             border="1px solid"

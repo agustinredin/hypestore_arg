@@ -49,21 +49,25 @@ const ItemDetail = ({ item }) => {
     const { cart, setCart } = useContext(cartContext)
     const { products, setProducts } = useContext(productContext)
     const { isOpen, onToggle } = useDisclosure()
-    const [categoria, setCategoria] = useState("")
+    /* const [categoria, setCategoria] = useState("") */
     const [currStock, setCurrStock] = useState(item.stock)
     const toast = useToast()
 
     useEffect(() => {
-        const db = getFirestore()
+        /* onToggle() */
+        /* const db = getFirestore()
         const docRef = doc(db, "categories", item.categoryId)
 
 
         getDoc(docRef).then((data) => {
             setCategoria(data.data().name)
             if (!isOpen) onToggle()
+        }).catch(err => {
+            setIsLoaded(true)
+            resolve(productsBackup)
+          }) */
 
-        })
-    }, [item.categoryId, isOpen, onToggle, currStock])
+    }, [item.categoryId,/*  isOpen, onToggle, */ currStock])
 
 
 
@@ -105,8 +109,8 @@ const ItemDetail = ({ item }) => {
 
     return (
         <>
-            {isOpen ? (
-                <SlideFade in={isOpen}>
+{/*             {isOpen ? ( */}
+                <SlideFade in={true}>
                     <SimpleGrid
                         columns={{ base: 1, lg: 2 }}
                         spacing={{ base: 2, md: 3 }}>
@@ -147,9 +151,10 @@ const ItemDetail = ({ item }) => {
                                         fontSize={'2xl'}>
                                         ${item.price}
                                     </Text>
-                                    <Text mx={5} p={1} bg={'red'} color={'white'} fontSize={{ base: 'xs' }}>
+{/*                                     <Text mx={5} p={1} bg={'red'} color={'white'} fontSize={{ base: 'xs' }}>
                                         {categoria.toLocaleUpperCase()}
-                                    </Text></Flex>
+                                    </Text> */}
+                                    </Flex>
                             </Box>
 
                             <Stack
@@ -190,12 +195,13 @@ const ItemDetail = ({ item }) => {
                         </Stack>
                     </SimpleGrid>
                 </SlideFade>
-            ) : <>
+            
+{/*             ) : <>
                 <Progress size='xs' isIndeterminate w={'100%'} />
                 <Flex justifyContent={'center'} alignItems={'center'} h={'80vh'} w={'100%'}>
                     <Text>Cargando...</Text>
                 </Flex>
-            </>}
+            </>} */}
         </>
     )
 }

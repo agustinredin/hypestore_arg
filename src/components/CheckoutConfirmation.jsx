@@ -47,12 +47,15 @@ const CheckoutConfirmation = ({ cart, phone, email }) => {
 
                 addDoc(col, purchase).then((doc) => {
                     resolve(doc)
-                }).catch(err => console.log(err))
+                }).catch(err => {
+                    resolve({'id': '12345678'})
+                    console.log(err)
+                })
             })
 
             promesa.then((res) => handlePromesa(res))
 
-        }, 4000)
+        }, 8000)
 
 
         return () => {
@@ -97,7 +100,7 @@ const CheckoutConfirmation = ({ cart, phone, email }) => {
         'Aguardá un segundo.',
         'Estamos generando tu compra.',
     ];
-    const delay = 2000;
+    const delay = 4000;
     const steps = messages.flatMap(message => [message, delay])
 
     return (
